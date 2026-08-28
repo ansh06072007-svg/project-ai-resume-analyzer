@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.nav-text {
+    color: #64748b;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #64748b;
+    max-width: 700px;
+    margin: auto;
+}
+
+.analyzer-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.analyzer-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 14px;
+    border: 2px dashed #4f46e5;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    resize: vertical;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #4f46e5;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESULT PAGE
+========================= */
+
+.result-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.result-container > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+
+/* SCORE BOX */
+
+.score-box {
+    background: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.score-box h2 {
+    margin-bottom: 20px;
+}
+
+.score-circle {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: #4f46e5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: bold;
+    border: 8px solid #c7d2fe;
+}
+
+
+/* STATUS */
+
+.status {
+    display: inline-block;
+    margin: 10px 0 20px;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.excellent {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.good {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.poor {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================
+   RESUME STRENGTH
+========================= */
+
+.strength-box {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strength-box p {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+.strength-score {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+
+/* =========================
+   RESULT CARDS
+========================= */
+
+.result-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.result-card h2 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   OVERVIEW
+========================= */
+
+.overview-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.overview-item {
+    flex: 1;
+    background: #f8fafc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.overview-item h3 {
+    font-size: 28px;
+    color: #4f46e5;
+}
+
+.overview-item p {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   QUALITY CHECKS
+========================= */
+
+.checks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.check-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.check-pass {
+    color: #166534;
+    font-weight: bold;
+}
+
+.check-fail {
+    color: #991b1b;
+    font-weight: bold;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.total-skills {
+    background: #ede9fe;
+    color: #5b21b6;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.detected {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.match {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.missing {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================
+   SUGGESTIONS
+========================= */
+
+.suggestions {
+    padding-left: 20px;
+}
+
+.suggestions li {
+    margin-bottom: 15px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ANALYZE AGAIN BUTTON
+========================= */
+
+.analyze-again {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #4f46e5;
+    color: white;
+    padding: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    transition: 0.3s;
+}
+
+.analyze-again:hover {
+    background: #3730a3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .analyzer-box {
+        padding: 25px;
+    }
+
+    .result-container > h1 {
+        font-size: 28px;
+    }
+
+    .strength-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .overview-grid {
+        flex-direction: column;
+    }
+
+    .card-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .check-item {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

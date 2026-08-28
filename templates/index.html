@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Resume Analyzer</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            🤖 AI Resume Analyzer
+        </div>
+
+        <div class="nav-text">
+            Smart Resume Analysis
+        </div>
+    </nav>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <div class="hero">
+
+            <h1>Improve Your Resume with AI 🚀</h1>
+
+            <p>
+                Upload your resume and compare it with a job description
+                to discover your matching skills and areas for improvement.
+            </p>
+
+        </div>
+
+
+        <!-- Analyzer Box -->
+        <div class="analyzer-box">
+
+            <h2>Analyze Your Resume</h2>
+
+            <!-- IMPORTANT: action and method -->
+            <form action="/analyze"
+                  method="POST"
+                  enctype="multipart/form-data">
+
+
+                <!-- Resume Upload -->
+                <div class="input-group">
+
+                    <label>📄 Upload Your Resume (PDF)</label>
+
+                    <input
+                        type="file"
+                        name="resume"
+                        accept=".pdf"
+                        required>
+
+                </div>
+
+
+                <!-- Job Description -->
+                <div class="input-group">
+
+                    <label>💼 Paste Job Description</label>
+
+                    <textarea
+                        name="job_description"
+                        placeholder="Paste the job description here..."
+                        rows="8"
+                        required></textarea>
+
+                </div>
+
+
+                <!-- Analyze Button -->
+                <button type="submit">
+                    🔍 Analyze Resume
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 AI Resume Analyzer | Powered by AI
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
